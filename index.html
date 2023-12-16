@@ -1,171 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#fcba74" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title> Koutuk Vidyalay, Shiroli </title>
-    <link rel="stylesheet" href="./style.css"">
-    <link rel=" stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--icon-->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
-    <!--Amita-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" rel="stylesheet">
-    <!--nova mono-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-    <!--tapestry-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
-    <!--playball-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-</head>
+    <title>Result Summer 2k23</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://icons4web.com/wp-content/uploads/2019/11/Results-icon-for-website-8211-Results-stock-image-304042.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body
+    class="h-screen flex items-center justify-center txt text-lg  bg-gradient-to-br -z-10 from-cyan-50 to-cyan-200"
+    method="get"
+  >
+    <form
+      class="px-20 z-10 bg-white border-2 h-2/3 w-96 rounded m-auto rounded-lg flex items-center flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] mx-2" id="form"
+    >
+      <h1 class="text-center py-4 text-cyan-600 text-2xl mb-16 Gotu">
+        STUDENT LOGIN
+      </h1>
+      <br />
+      <div class="flex flex-col items-center justify-evenly h-full">
+        <input type="number"
+          class="px-5 py-2 focus:outline-none border-2 border-cyan-300 rounded-full bg-cyan-50 focus:bg-cyan-200"
+          placeholder="Username" id="user" required
+        /><br />
+        <input type="Password" id="pass"
+          class="px-5 py-2 focus:outline-none border-2 border-cyan-300 rounded-full bg-cyan-50 focus:text-white focus:bg-cyan-500"
+          placeholder="Password" required
+        /><br />
 
-    <!--header-->
-    <p align="center"
-        style="width:94%;margin-left:3%;color: tomato; background-image:linear-gradient(45deg,crimson,wheat,wheat,crimson); font-size:2.5vh; font-family:'Amita',monospace;z-index:100">
-        || श्री || </p>
-    <header class="text-gray-400 body-font">
-        <span class="ml-3 text-xl xl:block lg:hidden">
-            <p align="center"
-                style="color:navy; font-family: 'Yatra One', cursive; font-size:5.2vh;text-shadow:.2vh .2vh .5vh sandybrown;">
-                Koutuk Vidyalay, Shiroli</a></p>
-            <hr width="80%"
-                style="margin-left:10%; height: 2px;background-image: linear-gradient(90deg,red,tomato,yellow,lime,aqua,indigo,violet)">
-        </span>
-
-        <!--navbar-->
-        <br>
-        <div class="grid justify-center align-center">
-            <nav class="md:ml-10 flex flex-wrap items-center text-gray-400 font-black justify-center">
-                <details class="text-center Gotu hover:text-gray-700">
-                    <summary
-                        class="border-2 border-black hover:bg-blue-600 hover:text-white bg-gray-100 rounded-2xl px-10 text-center text-2xl text-blue-800">
-                        MENU &#160</summary><br>
-                    <div class="border-2 bg-white rounded-3xl border-black">
-                        <a href="./index.html"
-                            class="m-auto my-2 px-4 hover:text-purple-500 text-orange-700">Home</a><br>
-                        <a href="./about.html" class="m-auto my-2 px-4 hover:text-purple-500">About Us</a><br>
-                        <a href="./staff.html" class="m-auto my-2 px-4 hover:text-purple-500">Staff List</a><br>
-                        <a href="./contact.html" class="m-auto my-2 px-4 hover:text-purple-500">Contact Us</a><br>
-                        <a href="./student.html" class="m-auto my-2 px-4 hover:text-purple-500">Student's Corner</a>
-                    </div>
-            </nav><br>
-            <button
-                class="inline-flex items-center bg-white border-2 border-black py-1 pl-8 focus:outline-none hover:bg-blue-600 rounded text-black mt-4 md:mt-0 text-center text-black hover:text-white">Admission
-                Form &rarr;
-            </button></details>
-        </div><br>
-        <!--language switcher-->
-
-        </p>
-    </header>
-    <br>
-
-
-    <!--main content-->
-
-    <section id="sections">
-        <p class="shead" align="center"> <u>Vision</u> </p>
-        <p class="scontent"> To develop Self-dependant, Versatile, <br>Innovative, Creative, Quality conscious
-            <br>students for betterment of society.
-    </section>
-    <br>
-    <section id="sections">
-        <p class="shead"> <u>Mission </u></p>
-        <p class="scontent">
-            <b><u class="no">1.</u></b> To serve quality education in minimum fees in rural areas like Shiroli, Herle
-            and others.<br>
-            <b><u class="no">2.</u></b> To develop "Never Give Up." attitude in students. <br>
-            <b><u class="no">3.</u></b> To make students ready for their future.<br>
-            <b><u class="no">4.</u></b> To guide students for better career for them.<br>
-            <b><u class="no">5.</u></b> To prepare students for International Level. &#160<br>
-            <b><u class="no">6.</u></b> To teach students the value of Freedom, Equality, Fraternity and Honesty.
-        </p>
-    </section><br>
-
-    <section id="sections">
-        <p class="shead"> <u>Our</u> <u>Features</u> </p>
-        <p class="scontent">
-            <b><u class="no">1.</u></b> Semi-English from kinder-garden to 10th class.<br>
-            <b><u class="no">2.</u></b> The only school teaching Sanskrit with Semi-English.<br>
-            <b><u class="no">3.</u></b> Preparation for competitive exams from 1st standard.<br>
-            <b><u class="no">4.</u></b> Building strong base of Maths and other subjects in kinder-garden with
-            activities like Handcrafting,Sports,Painting and much more...<br>
-            <b><u class="no">5.</u></b> Kinder-garden curriculum deals with practical life.<br>
-            <b><u class="no">6.</u></b> Internal evaluation of student through direct participation of parents. It was
-            also noticed by other reputed schools.<br>
-            <b><u class="no">7.</u></b> Transparent transactions, well-educated directors and successful permanent
-            members in various fields.<br>
-            <b><u class="no">8.</u></b> Always encouraging extra reading, singing, music, oratory,handicrafts, painting,
-            chess, abacus, market knowledge and home visits.<br>
-            <b><u class="no">9.</u></b> Encouraging,entrepreneurial and creative teachers.<br>
-            <b><u class="no">10.</u></b> Quality alumni are today's successful citizens on their own <br>
-        </p>
-    </section>
-    </main><br>
-
-    <section id="sections">
-        <details>
-            <summary class="shead">Fee Structure</summary>
-            <ul>
-                <p class="scontent">
-                    <li>
-                        <p class="scontent" style="color:red;font-size: 3vh;">1. <span
-                                style="color:yellowgreen;font-size:1.5vh;"><b><i>Play Group</i></b></span>
-                            <span style="color:maroon;font-family:'Yatra One',cursive;font-size:20px;">-
-                                4000/-</span></a>
-                    </li>
-                </p>
-                <li>
-                    <p class="scontent" style="color:red;font-size: 3vh;">2. <span
-                            style="color:yellowgreen;font-size:1.5vh;"><b><i>L.K.G. , U.K.G.</i></b></span>
-                        <span style="color:maroon;font-family:'Yatra One',cursive;font-size:20px;">- 5000/-</span></a>
-                </li>
-                </p>
-                <li>
-                    <p class="scontent" style="color:red;font-size: 3vh;">3.
-                        <span style="color:yellowgreen;font-size:1.5vh;"><b><i>1st Standard-4th Standard</i></b></span>
-                        <span style="color:maroon;font-family:'Yatra One',cursive;font-size:20px;">- 6000/-</span></a>
-                </li>
-                </p>
-                <li>
-                    <p class="scontent" style="color:red;font-size: 3vh;"> 4.
-                        <span style="color:yellowgreen;font-size:1.5vh;"><b><i>5th Standard-10th Standard</i></b></span>
-                        <span style="color:maroon;font-family:'Yatra One',cursive;font-size:20px;"> 7000/-</span></a>
-                </li>
-                </p>
-                </p>
-            </ul>
-        </details>
-    </section><br>
-
-
-    <!--footer -->
-    <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <span class="ml-3 text-xl" style="color:navy; font-family:'Gotu',cursive"> <b>कौतुक &#160विद्यालय &#160,
-                        शिरोली</b></span> </a>
-            <p class="text-sm text-blue-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-orange-500 sm:py-2 sm:mt-0 mt-4">
-
-    </footer>
-    </p>
-    <script src="./js/script.js"></script>
+        <input
+          type="button"
+          class="cursor-pointer px-5 py-2 focus:outline-none border-cyan-500 hover:bg-none text-white hover:text-cyan-500 border-2 w-1/2 text-center rounded-full bg-gradient-to-tr from-cyan-300 to-cyan-700"
+          value="Submit"
+          id="submit"onclick="changeLoc()"
+        /><br />
+        <h2
+          class="mt-10 cursor-pointer"
+          onclick="alert('Contact College Staff !')"
+        >
+          Forgot Password ?
+        </h2>
+      </div>
+    </form>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
-
+  <script>
+    function changeLoc(){
+      let user = document.getElementById('user');
+      if(user.value == '2162701242090' && pass.value=='aas2021'){
+      let x = confirm("Show Results For \"" + user.value + "\"");
+      form.reset();
+      if (x==1)window.location='Result.pdf';
+      }
+      else{alert("Wrong Username or Password !");}
+    }
+  </script>
 </html>
+<style>
+  header {
+  background: #fb5a0b;
+}
+
+.body {
+  align-items: center;
+  background: red;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#shree {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  color: orangered;
+  font-size: 20px;
+  font-family: "Yatra One";
+  background: cornsilk;
+  position: relative;
+  text-shadow: 1px 1px 1px #ffa000;
+}
+
+nav {
+  font-family: Yatra One, cursive;
+}
+
+.logo {
+  background: url("../img/logo.jpeg");
+  border-radius: 50%;
+  height: 150px;
+  border: 4px solid #d97706;
+  aspect-ratio: 1/1;
+  background-size: cover;
+}
+
+.sub {
+  font-size: 0.6em;
+  font-family: "Yatra One";
+  color: green;
+  font-weight: 800;
+}
+
+.fa {
+  display: inline;
+  margin-left: 3vw;
+  padding: clamp(0.5vw, 1vw, 1vw);
+}
+
+.company {
+  font-family: "Gotu";
+  font-weight: 900;
+  color: tomato;
+}
+
+#footer {
+  border-top: 4px solid #ea580c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+.h-17 {
+  height: 4.25em;
+}
+
+/* fonts start here*/
+@import url("https://fonts.googleapis.com/css2?family=Tillana:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arya&display=swap");
+
+.Amita {
+  font-family: "Amita";
+}
+.Yatra {
+  font-family: "Yatra One";
+}
+.Tangerine {
+  font-family: "Tangerine";
+}
+.Arya {
+  font-family: "Arya";
+}
+.Arima {
+  font-family: "Arima";
+}
+.Poppins {
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.Gotu {
+  font-family: "Gotu";
+  font-weight: 600;
+}
+.txt {
+  font-family: "Times New Roman", Times, serif;
+}
+
+</style>
